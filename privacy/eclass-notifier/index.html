@@ -1,1 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — eClass Notifier</title>
+<meta name="description" content="Privacy Policy for eClass Notifier by SymplyApps.">
+<style>
+:root{
+--bg:#ffffff;--fg:#1a1a1a;--muted:#5a5a5a;
+--line:#e3e3e3;--accent:#0b57d0;--card:#f7f8fa;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+margin:0;padding:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+"Helvetica Neue",Arial,sans-serif;
+line-height:1.65;font-size:16px;
+}
+header{
+background:var(--card);border-bottom:1px solid var(--line);
+padding:28px 20px;
+}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px}
+header .wrap{padding:0}
+h1{font-size:1.6rem;margin:0 0 6px;line-height:1.25}
+.sub{color:var(--muted);margin:0;font-size:.95rem}
+main{padding:28px 0 60px}
+h2{font-size:1.15rem;margin:32px 0 10px;line-height:1.3}
+h3{font-size:1rem;margin:20px 0 6px}
+p{margin:0 0 12px}
+ul{margin:0 0 14px;padding-left:22px}
+li{margin:0 0 6px}
+a{color:var(--accent);word-break:break-word}
+.identity{
+background:var(--card);border:1px solid var(--line);
+border-radius:10px;padding:16px 18px;margin:18px 0 8px;
+}
+.identity p{margin:0 0 6px}
+.identity p:last-child{margin:0}
+footer{
+border-top:1px solid var(--line);color:var(--muted);
+font-size:.875rem;padding:20px 0 40px;
+}
+code{
+background:var(--card);padding:1px 5px;
+border-radius:4px;font-size:.9em;
+}
+@media(max-width:480px){
+h1{font-size:1.35rem}
+h2{font-size:1.05rem}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<h1>Privacy Policy</h1>
+<p class="sub">eClass Notifier &middot; Last updated: 5 November 2026</p>
+</div>
+</header>
+
+<main>
+<div class="wrap">
+
+<p>
+This Privacy Policy explains how <strong>SymplyApps</strong>
+(“we”, “us”, “our”) collects, uses, stores, and protects
+information in connection with the mobile application
+<strong>eClass Notifier</strong> (the “App”).
+It applies to everyone who installs and uses the App.
+</p>
+
+<div class="identity">
+<p><strong>App:</strong> eClass Notifier</p>
+<p><strong>Developer / Publisher:</strong> SymplyApps</p>
+<p><strong>Data controller:</strong> Thalis Apostolatos</p>
+<p><strong>Country:</strong> Greece</p>
+<p><strong>Contact:</strong>
+<a href="mailto:symplyapp@gmail.com">symplyapp@gmail.com</a></p>
+</div>
+
+<h2>1. What the App does</h2>
+<p>
+eClass Notifier helps students using the University of Athens
+(UoA) eClass platform stay informed about new announcements,
+messages, and calendar events posted by their professors.
+</p>
+<p>
+Users provide their eClass login credentials to connect the App
+to their university account. The App retrieves relevant
+information from eClass, stores it to provide a convenient
+interface for viewing announcements, messages, and calendar
+events, and sends push notifications when new information
+is detected.
+</p>
+<p>
+The App also provides graphical interfaces for viewing this
+information, including a calendar view of academic events.
+</p>
+<p>
+eClass Notifier is an independent third-party application.
+It is not affiliated with, endorsed by, or officially associated
+with the National and Kapodistrian University of Athens or
+its eClass platform.
+</p>
+
+<h2>2. Summary</h2>
+<ul>
+<li>We process your eClass login credentials, academic information retrieved from your eClass account, a Firebase user identifier, and a push-notification token.</li>
+<li>eClass credentials are stored locally using Flutter Secure Storage and in encrypted form on Firebase Cloud.</li>
+<li>Google Cloud Key Management Service (KMS) is used to protect credentials stored in the cloud.</li>
+<li>We do not collect your location, camera, photos, microphone, contacts, health, biometric, or financial data.</li>
+<li>We do not use advertising SDKs, analytics SDKs, or third-party tracking services.</li>
+<li>We do not sell or rent your personal data.</li>
+<li>You can delete your App data directly through the App.</li>
+</ul>
+
+<h2>3. Information we collect</h2>
+
+<h3>3.1 eClass account credentials</h3>
+<p>
+To use the App, you must provide the username and password
+associated with your University of Athens eClass account.
+</p>
+<p>
+These credentials are stored locally on your device using
+<strong>Flutter Secure Storage</strong>. They are also
+transmitted to our backend through secure connections and
+stored in encrypted form in Firebase Cloud.
+</p>
+<p>
+We use Google Cloud Key Management Service (KMS) encryption
+to protect credentials stored in the cloud. Our backend
+services can decrypt and use these credentials when necessary
+to authenticate with eClass and retrieve your academic
+information.
+</p>
+<p>
+Your eClass credentials are used solely to provide the App's
+functionality. We do not use them to access your university
+account for unrelated purposes.
+</p>
+
+<h3>3.2 Account information</h3>
+<p>
+The App uses Firebase Authentication to identify users and
+manage their sessions. A unique user identifier is generated
+and associated with the user's App data.
+</p>
+<p>
+The App does not require or store your personal name or
+email address as part of its Firebase user account.
+Authentication uses Firebase custom authentication tokens
+associated with a user identifier.
+</p>
+
+<h3>3.3 Academic information</h3>
+<p>
+To provide its functionality, the App retrieves and stores
+information available through your eClass account. This may
+include:
+</p>
+<ul>
+<li>Full announcement titles and content;</li>
+<li>Full message titles and content, including associated links and text;</li>
+<li>Names of professors or other senders associated with announcements and messages;</li>
+<li>Course identifiers associated with announcements, messages, and events;</li>
+<li>Calendar event titles;</li>
+<li>Calendar event start and end dates and times;</li>
+<li>Calendar event types;</li>
+<li>Optional calendar event descriptions or content;</li>
+<li>Additional calendar event information provided by eClass.</li>
+</ul>
+<p>
+The App does not download or store attachments or files
+associated with announcements or messages.
+</p>
+<p>
+This information is retrieved from your own eClass account
+and stored in Firebase to allow the App to display it and
+detect new information.
+</p>
+
+<h3>3.4 Push notifications</h3>
+<p>
+If notifications are enabled, Firebase Cloud Messaging (FCM)
+provides us with a device registration token and associated
+platform information. We use this token to deliver push
+notifications to your device.
+</p>
+<p>
+On Apple devices, Firebase Cloud Messaging manages delivery
+through Apple's Push Notification service (APNs).
+</p>
+<p>
+Notifications contain generic information about the number
+of new items detected, such as:
+</p>
+<ul>
+<li>The number of new announcements;</li>
+<li>The number of new messages;</li>
+<li>The number of new calendar events.</li>
+</ul>
+<p>
+Notifications do not contain the actual content of announcements,
+messages, or calendar events, nor do they include their full
+titles or descriptions.
+</p>
+<p>
+The App also provides a notification frequency preference
+that can limit notifications to once every 10 hours.
+You can disable push notifications through your device
+settings at any time.
+</p>
+
+<h3>3.5 App configuration and technical information</h3>
+<p>
+The App stores configuration information required to operate
+its services. This includes scraping configurations,
+notification preferences, and information associated with
+your device's push-notification registration.
+</p>
+<p>
+The App uses Firebase services, including Firebase App Check,
+to help protect its backend services and verify legitimate
+App requests.
+</p>
+<p>
+Basic technical information, such as app version, platform
+information, and diagnostic information generated by the
+Firebase SDKs, may be processed as necessary to operate
+and secure the services.
+</p>
+
+<h3>3.6 What we do not collect</h3>
+<p>The App does not request or intentionally collect:</p>
+<ul>
+<li>Precise or approximate location;</li>
+<li>Camera, photos, or media files;</li>
+<li>Microphone or audio;</li>
+<li>Contacts;</li>
+<li>Health or biometric information;</li>
+<li>Financial or payment information;</li>
+<li>Advertising identifiers or advertising data;</li>
+<li>Information about other students beyond information made available through your own eClass account;</li>
+<li>Attachments or files associated with eClass announcements or messages.</li>
+</ul>
+<p>
+We do not use advertising, analytics, or third-party tracking SDKs.
+</p>
+
+<h2>4. How we use information and our legal bases</h2>
+<p>We use the information described above to:</p>
+<ul>
+<li>Authenticate you with your eClass account and provide access to the App's features (<em>performance of a contract</em>);</li>
+<li>Retrieve, process, and display announcements, messages, and calendar events from your eClass account (<em>performance of a contract</em>);</li>
+<li>Store academic information and App configurations to provide the App's core functionality (<em>performance of a contract</em>);</li>
+<li>Send push notifications about newly detected announcements, messages, and calendar events (<em>performance of a contract</em> and, where applicable, your device-level notification permission);</li>
+<li>Maintain the security, integrity, and proper functioning of the App and its backend services (<em>legitimate interests</em>);</li>
+<li>Comply with applicable legal obligations (<em>legal obligation</em>).</li>
+</ul>
+<p>
+We process your eClass credentials only to authenticate with
+the eClass platform and retrieve the information necessary
+to provide the App's functionality.
+</p>
+
+<h2>5. Sharing</h2>
+<p>
+We do <strong>not</strong> sell, rent, or trade your personal
+data, and we do not share it with advertisers or data brokers.
+</p>
+<p>
+We share or process information only through the service
+providers necessary to operate the App:
+</p>
+<ul>
+<li>
+<strong>Google (Firebase / Google Cloud)</strong> —
+Firebase Authentication, Cloud Firestore database storage,
+Firebase Cloud Functions, Firebase Cloud Messaging,
+Firebase App Check, and Google Cloud Key Management Service
+(KMS) for encryption key management. Google acts as our
+service provider and data processor for these services.
+</li>
+<li>
+<strong>Apple Inc.</strong> — Apple's Push Notification
+service (APNs) is used to deliver push notifications to
+Apple devices through Firebase Cloud Messaging.
+</li>
+<li>
+<strong>University of Athens eClass platform</strong> —
+the App connects to the eClass platform using the credentials
+you provide in order to retrieve your academic information.
+The university platform processes your information under
+its own privacy policy and terms.
+</li>
+</ul>
+<p>
+Our Firebase Cloud Functions use your credentials to
+authenticate with eClass and retrieve the information
+required by the App. The credentials are not provided
+to unrelated third parties.
+</p>
+<p>
+We may also disclose information if required by law, or
+when necessary to protect the rights, safety, and security
+of users or the public.
+</p>
+
+<h2>6. International transfers</h2>
+<p>
+Our Firebase project and associated Google Cloud services
+are configured to use the Europe-West region, including
+the <code>europe-west1</code> region for Firebase Cloud
+Functions.
+</p>
+<p>
+Google and Apple may process certain information in other
+countries depending on their service infrastructure and
+operations. Where personal data is transferred outside
+the European Economic Area, appropriate safeguards are
+used where required by applicable data protection law,
+such as the European Commission's Standard Contractual
+Clauses and relevant data-processing terms.
+</p>
+<p>
+For further information about Google's data-processing
+practices, please refer to Google's applicable privacy
+and data-processing documentation.
+</p>
+
+<h2>7. Retention</h2>
+<p>
+We retain your personal data and academic information
+only for as long as necessary to provide the App's
+functionality.
+</p>
+<p>
+Your eClass credentials, academic information, notification
+preferences, device registration information, and other
+App configuration data are stored in Firebase while your
+App account remains active.
+</p>
+<p>
+We do not intentionally retain academic information after
+you use the App's data deletion function. Information is
+removed from the App's Firebase storage when the deletion
+operation is performed successfully.
+</p>
+<p>
+Limited information may remain where retention is required
+by applicable law or necessary to establish, exercise,
+or defend legal claims.
+</p>
+
+<h2>8. Account and data deletion</h2>
+<p>
+You can delete your App data directly from within
+eClass Notifier using the dedicated data deletion function.
+</p>
+<p>When you activate this function:</p>
+<ul>
+<li>All locally stored App data and credentials are deleted from your device;</li>
+<li>Your encrypted eClass credentials stored in Firebase are deleted;</li>
+<li>Your stored announcements and their content are deleted;</li>
+<li>Your stored messages and their content are deleted;</li>
+<li>Your stored calendar events are deleted;</li>
+<li>Your scraping configurations and associated user data are deleted;</li>
+<li>Your notification preferences and stored FCM registration information are deleted;</li>
+<li>Your associated Firebase user data is deleted.</li>
+</ul>
+<p>
+Deleting your App data stops the App's synchronization and
+scraping processes because the information and configurations
+required to perform them are removed.
+</p>
+<p>
+<strong>Important:</strong> This deletion affects only
+eClass Notifier and the data stored by its services.
+It does not delete your University of Athens account or
+any information stored on the university's eClass platform.
+</p>
+<p>
+The Firebase Authentication entry associated with your user
+identifier is not explicitly deleted by this process.
+It may remain in Firebase Authentication without the
+associated App data. This remaining authentication entry
+is not used to retain your academic information or credentials.
+</p>
+<p>
+The deletion function is designed to remove your associated
+App data immediately when the operation succeeds.
+Information that must be retained by law will be kept
+only for the period required by law.
+</p>
+
+<h2>9. Your rights</h2>
+<p>
+If you are in the European Economic Area or the United Kingdom,
+you have the right to:
+</p>
+<ul>
+<li>Access the personal data we hold about you;</li>
+<li>Request correction of inaccurate data;</li>
+<li>Request deletion of your data;</li>
+<li>Request restriction of, or object to, processing;</li>
+<li>Request portability of your data;</li>
+<li>Withdraw consent at any time, where processing is based on consent;</li>
+<li>Lodge a complaint with a supervisory authority (in Greece, the Hellenic Data Protection Authority, <a href="https://www.dpa.gr" rel="noopener noreferrer">www.dpa.gr</a>).</li>
+</ul>
+<p>
+You can exercise your right to delete your App data directly
+through the deletion function within the App.
+</p>
+<p>
+To exercise any other rights or ask questions about your
+personal data, contact us at
+<a href="mailto:symplyapp@gmail.com">symplyapp@gmail.com</a>.
+</p>
+
+<h2>10. Children</h2>
+<p>
+eClass Notifier is designed for students who have access
+to the University of Athens eClass platform.
+</p>
+<p>
+Access to the App requires valid eClass account credentials.
+Although the App is not specifically directed at children,
+users under the age of 18 who have a valid university
+eClass account may technically use it.
+</p>
+<p>
+We do not knowingly seek to collect personal information
+from children independently of the information required
+to provide the App's functionality. If you believe that
+personal data has been provided improperly, please contact
+us at <a href="mailto:symplyapp@gmail.com">symplyapp@gmail.com</a>.
+</p>
+
+<h2>11. Security</h2>
+<p>
+We take reasonable technical and organizational measures
+to protect information processed through eClass Notifier.
+</p>
+<p>These measures include:</p>
+<ul>
+<li>Encrypted connections (HTTPS/TLS) for communication between the App and backend services;</li>
+<li>Secure local credential storage using Flutter Secure Storage;</li>
+<li>Encryption of stored eClass credentials using Google Cloud KMS;</li>
+<li>Firebase Authentication for managing user authentication;</li>
+<li>Firebase App Check to help protect backend services from unauthorized access;</li>
+<li>Access restrictions for production data and backend services.</li>
+</ul>
+<p>
+Access to encrypted credentials is restricted to the backend
+processes that require them to authenticate with eClass
+and retrieve academic information.
+</p>
+<p>
+No method of transmission or storage is completely secure.
+Although we take reasonable precautions to protect your
+information, we cannot guarantee absolute security.
+</p>
+
+<h2>12. Changes to this policy</h2>
+<p>
+We may update this Privacy Policy from time to time to
+reflect changes in the App, its functionality, our
+data-processing practices, or applicable legal requirements.
+</p>
+<p>
+The updated version will be posted on this page with a new
+“Last updated” date. If changes are significant, we will
+notify you through the App or by email where appropriate.
+</p>
+
+<h2>13. Contact</h2>
+<p>
+For any questions about this Privacy Policy, the information
+we process, or your data protection rights, contact:
+</p>
+<p>
+<strong>Thalis Apostolatos (SymplyApps)</strong><br>
+Email: <a href="mailto:symplyapp@gmail.com">symplyapp@gmail.com</a><br>
+Country: Greece
+</p>
+
+</div>
+</main>
+
+<footer>
+<div class="wrap">
+&copy; 2026 SymplyApps. This page is the official Privacy
+Policy for the eClass Notifier application.
+</div>
+</footer>
+
+</body>
+</html>
 
