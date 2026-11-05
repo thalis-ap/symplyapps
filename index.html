@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Πολιτικές Απορρήτου — SymplyApps</title>
+<meta name="description" content="Ευρετήριο πολιτικών απορρήτου των εφαρμογών SymplyApps.">
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#fff; --fg:#111827; --muted:#6b7280;
+    --line:#e5e7eb; --accent:#2563eb;
+    --shadow:0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0b0f19; --card:#131a27; --fg:#e6e9ef; --muted:#9aa4b2;
+           --line:#243043; --accent:#6ea8fe; --shadow:none; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:48px 20px 64px}
+  header h1{font-size:clamp(1.6rem,4vw,2.2rem);margin:0 0 8px;letter-spacing:-.02em}
+  header p{margin:0 0 32px;color:var(--muted)}
+  ul{list-style:none;margin:0;padding:0;display:grid;gap:12px;
+     grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+  a.card{
+    display:flex;align-items:center;gap:14px;
+    padding:16px 18px;background:var(--card);
+    border:1px solid var(--line);border-radius:14px;
+    text-decoration:none;color:inherit;box-shadow:var(--shadow);
+    transition:transform .15s ease,border-color .15s ease;
+  }
+  a.card:hover{transform:translateY(-2px);border-color:var(--accent)}
+  a.card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .txt{display:flex;flex-direction:column;min-width:0}
+  .name{font-weight:600}
+  .path{font-size:.8rem;color:var(--muted);
+        font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+        overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .chev{margin-left:auto;color:var(--muted);transition:transform .15s ease,color .15s ease}
+  a.card:hover .chev{transform:translateX(3px);color:var(--accent)}
+  footer{margin-top:40px;font-size:.85rem;color:var(--muted)}
+  footer a{color:inherit}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <h1>Πολιτικές Απορρήτου</h1>
+    <p>Επιλέξτε την εφαρμογή για να δείτε την αντίστοιχη πολιτική απορρήτου.</p>
+  </header>
+
+  <ul>
+    <li><a class="card" href="privacy/1ogelilioupolis/">
+      <span class="txt"><span class="name">1ο ΓΕΛ Ηλιούπολης</span>
+      <span class="path">privacy/1ogelilioupolis/</span></span>
+      <span class="chev" aria-hidden="true">→</span></a></li>
+
+    <li><a class="card" href="privacy/dmviewer/">
+      <span class="txt"><span class="name">DM Viewer</span>
+      <span class="path">privacy/dmviewer/</span></span>
+      <span class="chev" aria-hidden="true">→</span></a></li>
+
+    <li><a class="card" href="privacy/eclass-notifier/">
+      <span class="txt"><span class="name">eClass Notifier</span>
+      <span class="path">privacy/eclass-notifier/</span></span>
+      <span class="chev" aria-hidden="true">→</span></a></li>
+
+    <li><a class="card" href="privacy/elegxos-eisitiriou-skg/">
+      <span class="txt"><span class="name">Έλεγχος Εισιτηρίου (SKG)</span>
+      <span class="path">privacy/elegxos-eisitiriou-skg/</span></span>
+      <span class="chev" aria-hidden="true">→</span></a></li>
+
+    <li><a class="card" href="privacy/elegxos-eisitiriou/">
+      <span class="txt"><span class="name">Έλεγχος Εισιτηρίου</span>
+      <span class="path">privacy/elegxos-eisitiriou/</span></span>
+      <span class="chev" aria-hidden="true">→</span></a></li>
+
+    <li><a class="card" href="privacy/energy-consumption/">
+      <span class="txt"><span class="name">Energy Consumption</span>
+      <span class="path">privacy/energy-consumption/</span></span>
+      <span class="chev" aria-hidden="true">→</span></a></li>
+
+    <li><a class="card" href="privacy/pantomima/">
+      <span class="txt"><span class="name">Παντομίμα</span>
+      <span class="path">privacy/pantomima/</span></span>
+      <span class="chev" aria-hidden="true">→</span></a></li>
+
+    <li><a class="card" href="privacy/pernas/">
+      <span class="txt"><span class="name">Περνάς</span>
+      <span class="path">privacy/pernas/</span></span>
+      <span class="chev" aria-hidden="true">→</span></a></li>
+  </ul>
+
+  <footer>
+    <a href="https://github.com/thalis-ap/symplyapps">Πηγαίος κώδικας στο GitHub</a>
+  </footer>
+</main>
+</body>
+</html>
